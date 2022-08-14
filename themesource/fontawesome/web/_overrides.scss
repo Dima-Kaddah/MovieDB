@@ -1,0 +1,24 @@
+$override-core          : true !default;
+
+@if $override-core {
+    .btn {
+        font-family: inherit;
+        font-weight: inherit;
+        &::before {
+            font-family: $fa-style-family;
+            font-weight: 400;
+        }
+        &.fas, 
+        &.fa-solid {
+            &::before {
+                font-weight: 900;
+            }
+        }
+        &.fab,
+        &.fa-brands {
+            &::before {
+                font-family: "Font Awesome 6 Brands";
+            }
+        }
+    }
+}
