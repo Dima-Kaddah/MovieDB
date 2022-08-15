@@ -23,7 +23,7 @@ import deeplink.utils.DeeplinkUtils;
  * Creates a deeplink configuration using DeepLinkname as identifier.
  * Any existing configurations with this identifier will be deleted.
  */
-public class SetObjectParameterDeeplink extends CustomJavaAction<java.lang.Void>
+public class SetObjectParameterDeeplink extends CustomJavaAction<java.lang.Boolean>
 {
 	private java.lang.String Microflow;
 	private java.lang.String Description;
@@ -46,7 +46,7 @@ public class SetObjectParameterDeeplink extends CustomJavaAction<java.lang.Void>
 	}
 
 	@java.lang.Override
-	public java.lang.Void executeAction() throws Exception
+	public java.lang.Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		DeeplinkUtils.updateOrCreateDeeplink(getContext(), DeepLinkName, ForceLogin, Description, Microflow, KeepAsHomeDeeplink, Entity, Attribute);

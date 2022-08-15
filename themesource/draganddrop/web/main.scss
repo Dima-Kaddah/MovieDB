@@ -1,0 +1,107 @@
+@import "../../../theme/web/custom-variables";
+// Example 1
+.EXAMPLE1 {
+  .REST {
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    height: 40vh;
+  }
+  .REST_dnd_draggable_item {
+    border: 2px solid rgb(194, 194, 194);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 4px;
+    &:focus-visible {
+      background-color: rgb(194, 194, 194); // Add this for A11y
+    }
+  }
+  .REST_dnd_draggable_over {
+    background-color: rgb(194, 194, 194);
+  }
+  .REST_dnd_draggable_hover {
+    background-color: #e1e1e1;
+  }
+  .REST_dnd_draggable_dragging {
+    opacity: 0.4;
+  }
+}
+// .EXAMPLE 2 {
+.FACTORY {
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto;
+  height: 40vh;
+}
+.FACTORY_dnd_draggable_item {
+  border: 2px solid rgb(194, 194, 194);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 100%;
+  margin: 4px;
+  &:focus-visible {
+    background-color: rgb(194, 194, 194); // Add this for A11y
+  }
+}
+.PART {
+  background-color: #efefef;
+  border-radius: 10px;
+  overflow: auto;
+}
+.PART_dnd_draggable_item {
+  border: 2px solid rgb(194, 194, 194);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+  &:focus-visible {
+    background-color: rgb(194, 194, 194); // Add this for A11y
+  }
+}
+.PART_dnd_draggable_hover {
+  background-color: #e1e1e1;
+}
+.PART_dnd_draggable_dragging {
+  opacity: 0.4;
+}
+.PART_dnd_at_end_over {
+  border-radius: 10px;
+  background-color: rgba(201, 201, 201, 0.372);
+}
+.dnd_drag_preview_container {
+  overflow: hidden;
+}
+
+.Parts_Enum {
+  .PART_LIST_1,
+  .PART_LIST_2 {
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    height: 40vh;
+    overflow: scroll;
+  }
+  .dnd_draggable_item {
+    border: 2px solid rgb(194, 194, 194);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 4px;
+    &:focus-visible {
+      background-color: rgb(194, 194, 194); // Add this for A11y
+    }
+  }
+  .dnd_draggable_over {
+    background-color: rgb(194, 194, 194);
+  }
+  .dnd_draggable_hover {
+    background-color: #e1e1e1;
+  }
+  .dnd_draggable_dragging {
+    opacity: 0.4;
+  }
+}
