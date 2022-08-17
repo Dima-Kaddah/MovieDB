@@ -79,8 +79,7 @@ outline: none;
 
  .regoRight{
     background:lightgrey;
-    border-radius:10%;
-    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
+    /* background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%); */
     will-change: opacity;
     position: relative;
     left: 0;
@@ -89,12 +88,12 @@ outline: none;
     margin: 0;
 }
 
-.regoRight:after{
+/* .regoRight:after{
     content: 'after';
     position:absolute;
     left: 100%;
     top:50%;
-}
+} */
 
 
 

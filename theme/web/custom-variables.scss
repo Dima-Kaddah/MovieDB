@@ -18,10 +18,10 @@ $gray-lighter: #f8f8f8;
 
 //== Step 1: Brand Colors
 $brand-default: $gray-primary;
-$brand-primary: #264ae5;
-$brand-success: #3cb33d;
-$brand-warning: #eca51c;
-$brand-danger: #e33f4e;
+$brand-primary: #4f6aec;
+$brand-success: #91d492;
+$brand-warning: #f1d69f;
+$brand-danger: #f78891;
 
 $brand-logo: false;
 $brand-logo-height: 32px;
@@ -30,20 +30,20 @@ $brand-logo-width: 32px; // Only used for CSS brand logo
 //== Step 2: UI Customization
 
 // Default Font Size & Color
-$font-size-default: 14px;
+$font-size-default: 16px;
 $font-color-default: #0a1325;
 
 // Global Border Color
-$border-color-default: #ced0d3;
-$border-radius-default: 4px;
+$border-color-default: #b0b2b4;
+$border-radius-default: 5px;
 
 // Topbar
-$topbar-bg: #020557;
-$topbar-minimalheight: 48px;
+$topbar-bg: #000000;
+$topbar-minimalheight: 100px;
 $topbar-border-color: $border-color-default;
 
 // Sidebar
-$sidebar-bg: #24276c;
+$sidebar-bg: #000000;
 
 // Topbar mobile
 $m-header-height: 45px;
@@ -82,8 +82,8 @@ $font-family-import: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,
 $font-family-base: "Open Sans", sans-serif;
 
 // Font Sizes
-$font-size-large: 18px;
-$font-size-small: 12px;
+$font-size-large: 20px;
+$font-size-small: 14px;
 
 // Font Weights
 $font-weight-light: 100;
@@ -109,7 +109,7 @@ $line-height-base: 1.428571429;
 $font-header-margin: 0 0 8px 0;
 
 // Text Colors
-$font-color-detail: #6c717e;
+$font-color-detail: #ffffff;
 $font-color-header: #0a1325;
 
 //== Navigation
@@ -117,10 +117,10 @@ $font-color-header: #0a1325;
 
 // Default Navigation styling
 $navigation-item-height: unset;
-$navigation-item-padding: 8px;
+$navigation-item-padding: 10px;
 
 $navigation-font-size: 14px;
-$navigation-sub-font-size: $font-size-small;
+$navigation-sub-font-size: $font-size-large;
 $navigation-glyph-size: 20px; // For glyphicons that you can select in the Mendix Modeler
 
 $navigation-color: #fff;
@@ -137,7 +137,7 @@ $navsidebar-bg-hover: darken($navsidebar-bg, 10%);
 $navsidebar-bg-active: darken($navsidebar-bg, 10%);
 
 $navsidebar-sub-bg: $navsidebar-bg-hover;
-$navsidebar-sub-bg-hover: $navsidebar-bg;
+$navsidebar-sub-bg-hover: #fff;
 $navsidebar-sub-bg-active: $navsidebar-bg;
 
 $navsidebar-border-color: $navsidebar-bg-hover;
@@ -229,21 +229,21 @@ $btn-bordered: false; // Default value false, set to true if you want this effec
 $btn-border-radius: $border-radius-default;
 
 // Button Background Color
-$btn-default-bg: #fff;
+$btn-default-bg: rgb(8, 8, 8);
 $btn-primary-bg: $brand-primary;
 $btn-success-bg: $brand-success;
 $btn-warning-bg: $brand-warning;
 $btn-danger-bg: $brand-danger;
 
 // Button Border Color
-$btn-default-border-color: $gray-primary;
+$btn-default-border-color: #f4f9ff;
 $btn-primary-border-color: $brand-primary;
 $btn-success-border-color: $brand-success;
 $btn-warning-border-color: $brand-warning;
 $btn-danger-border-color: $brand-danger;
 
 // Button Text Color
-$btn-default-color: $brand-primary;
+$btn-default-color: #fff;
 $btn-primary-color: #fff;
 $btn-success-color: #fff;
 $btn-warning-color: #fff;
@@ -253,7 +253,7 @@ $btn-danger-color: #fff;
 $btn-default-icon-color: $gray;
 
 // Button Background Color
-$btn-default-bg-hover: $btn-default-border-color;
+$btn-default-bg-hover: #233838;
 $btn-primary-bg-hover: mix($btn-primary-bg, black, 80%);
 $btn-success-bg-hover: mix($btn-success-bg, black, 80%);
 $btn-warning-bg-hover: mix($btn-warning-bg, black, 80%);
@@ -331,12 +331,12 @@ $listview-padding-left: 16px;
 // Background Colors
 $grid-bg: transparent;
 $grid-bg-header: transparent; // Grid Headers
-$grid-bg-hover: mix($grid-border-color, #fff, 20%);
-$grid-bg-selected: mix($grid-border-color, #fff, 30%);
-$grid-bg-selected-hover: mix($grid-border-color, #fff, 50%);
+$grid-bg-hover: mix($grid-border-color, rgb(18, 21, 24), 20%);
+$grid-bg-selected: mix($grid-border-color, rgb(88, 50, 50), 30%);
+$grid-bg-selected-hover: mix($grid-border-color, rgb(122, 95, 95), 50%);
 
 // Striped Background Color
-$grid-bg-striped: mix($grid-border-color, #fff, 10%);
+$grid-bg-striped: mix($grid-border-color,rgba(139, 139, 139, 0.5), 10%);
 
 // Background Footer Color
 $grid-footer-bg: $gray-primary;
