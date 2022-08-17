@@ -21023,8 +21023,8 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 .layout-atlas .region-topbar .navbar-brand img {
   display: inline-block;
   margin-right: 8px;
-  width: auto;
-  height: 32px;
+  width: 80px;
+  height: 75px;
 }
 .layout-atlas .region-topbar .navbar-brand a {
   margin-left: 8px;
