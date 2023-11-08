@@ -36,7 +36,7 @@ public class SignIn extends CustomJavaAction<IMendixObject>
 	@java.lang.Override
 	public IMendixObject executeAction() throws Exception
 	{
-		this.UserAccount = __UserAccount == null ? null : system.proxies.User.initialize(getContext(), __UserAccount);
+		this.UserAccount = this.__UserAccount == null ? null : system.proxies.User.initialize(getContext(), __UserAccount);
 
 		// BEGIN USER CODE
 		
@@ -59,6 +59,7 @@ public class SignIn extends CustomJavaAction<IMendixObject>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

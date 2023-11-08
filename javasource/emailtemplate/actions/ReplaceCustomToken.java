@@ -31,7 +31,7 @@ public class ReplaceCustomToken extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.Emailobject = __Emailobject == null ? null : emailtemplate.proxies.Email.initialize(getContext(), __Emailobject);
+		this.Emailobject = this.__Emailobject == null ? null : emailtemplate.proxies.Email.initialize(getContext(), __Emailobject);
 
 		// BEGIN USER CODE
 		if( !this.Emailobject.getUseOnlyPlainText() )
@@ -43,6 +43,7 @@ public class ReplaceCustomToken extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

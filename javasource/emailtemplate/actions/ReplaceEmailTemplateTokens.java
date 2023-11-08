@@ -37,12 +37,13 @@ public class ReplaceEmailTemplateTokens extends CustomJavaAction<java.lang.Boole
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.email = __email == null ? null : emailtemplate.proxies.Email.initialize(getContext(), __email);
+		this.email = this.__email == null ? null : emailtemplate.proxies.Email.initialize(getContext(), __email);
 
-		this.TokenList = new java.util.ArrayList<mxmodelreflection.proxies.Token>();
-		if (__TokenList != null)
-			for (IMendixObject __TokenListElement : __TokenList)
-				this.TokenList.add(mxmodelreflection.proxies.Token.initialize(getContext(), __TokenListElement));
+		this.TokenList = java.util.Optional.ofNullable(this.__TokenList)
+			.orElse(java.util.Collections.emptyList())
+			.stream()
+			.map(__TokenListElement -> mxmodelreflection.proxies.Token.initialize(getContext(), __TokenListElement))
+			.collect(java.util.stream.Collectors.toList());
 
 		// BEGIN USER CODE
 		
@@ -62,6 +63,7 @@ public class ReplaceEmailTemplateTokens extends CustomJavaAction<java.lang.Boole
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

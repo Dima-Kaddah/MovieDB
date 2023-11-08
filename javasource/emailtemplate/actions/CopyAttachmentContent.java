@@ -32,9 +32,9 @@ public class CopyAttachmentContent extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.CopyFrom = __CopyFrom == null ? null : system.proxies.FileDocument.initialize(getContext(), __CopyFrom);
+		this.CopyFrom = this.__CopyFrom == null ? null : system.proxies.FileDocument.initialize(getContext(), __CopyFrom);
 
-		this.CopyTo = __CopyTo == null ? null : system.proxies.FileDocument.initialize(getContext(), __CopyTo);
+		this.CopyTo = this.__CopyTo == null ? null : system.proxies.FileDocument.initialize(getContext(), __CopyTo);
 
 		// BEGIN USER CODE
 		IContext context = this.getContext();
@@ -51,6 +51,7 @@ public class CopyAttachmentContent extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

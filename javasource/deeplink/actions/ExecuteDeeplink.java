@@ -45,7 +45,7 @@ public class ExecuteDeeplink extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.pendinglink = __pendinglink == null ? null : deeplink.proxies.PendingLink.initialize(getContext(), __pendinglink);
+		this.pendinglink = this.__pendinglink == null ? null : deeplink.proxies.PendingLink.initialize(getContext(), __pendinglink);
 
 		// BEGIN USER CODE
 		
@@ -138,6 +138,7 @@ public class ExecuteDeeplink extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()
